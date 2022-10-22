@@ -3,9 +3,9 @@ ddim a,7
 dialog JslConnectDevices() //この関数でつなげているコントローラー全部をつなげるらしいです
 repeat
 redraw 0
-color
-boxf
 color 255,255,255
+boxf
+color
 pos 0,0
 JslGetIMUState a,0
 mes a(0)

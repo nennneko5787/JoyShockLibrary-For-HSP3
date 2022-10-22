@@ -75,13 +75,13 @@
 #uselib "JoyShockLibrary"
 
 #cfunc global JslConnectDevices "JslConnectDevices" //intが返されます
-#func global JslGetConnectedDeviceHandles "JslGetConnectedDeviceHandles" int,var //varにintが返されます
+#cfunc global JslGetConnectedDeviceHandles "JslGetConnectedDeviceHandles" var,int //varにintが返されます
 #func global JslDisconnectAndDisposeAll "JslDisconnectAndDisposeAll" //何も返されません
 
 #func global JslGetSimpleState "JslGetSimpleState" var,int //p1:device ID、varに構造体が返されます
 #func global JslGetIMUState "JslGetIMUState" var,int //p1:device ID、varに構造体が返されます
 #func global JslGetMotionState "JslGetMotionState" var,int //p1:device ID、varに構造体が返されます
-#func global JslGetTouchState "JslGetTouchState" var,int,int //p2:device ID、p3:bool previous = false、varに構造体が返されます()、DualShock4,5のみ対応
+#func global JslGetTouchState "JslGetTouchState" var,int,int //p2:device ID、p3:bool previous = false、varに構造体が返されます()、DualShock4,DualSenceのみ対応
 
 #cfunc JslGetTouchpadDimension "JslGetTouchpadDimension" int,var,var //p1:device ID、p2とp3にタッチパネルの寸法が出力されます、int(bool)が返されます
 #cfunc JslGetButtons "JslGetButtons" int //p1:device ID、intが返されます、 ボタン以上のもの(スティック押し込みなど)が必要な場合は、JslGetSimpleStateを使用する方が効率的です。
