@@ -1,0 +1,22 @@
+#include "JoyShockLibrary.as"
+dim a,7
+ddim b,7
+dialog JslConnectDevices() //この関数でつなげているコントローラー全部をつなげるらしいです
+repeat
+redraw 0
+color 255,255,255
+boxf
+color
+pos 0,0
+JslGetSimpleState a,0
+mes a(0)
+JslGetSimpleState b,0
+mes b(1)
+mes b(2)
+mes b(3)
+mes b(4)
+mes b(5)
+mes b(6)
+redraw 1
+await
+loop

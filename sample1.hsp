@@ -1,0 +1,3 @@
+#include "JoyShockLibrary.as"
+dialog JslConnectDevices() //この関数でつなげているコントローラー全部をつなげるらしいです
+mes JslGetControllerColour(0) //コントローラー1の色を取得
