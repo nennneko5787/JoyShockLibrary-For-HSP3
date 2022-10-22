@@ -1,2 +1,2 @@
 # JoyShockLibrary-For-HSP3
-JoyShockLibraryをHSP3で動作させるテスト。
+動作させるには[JoyShockLibraryの最新バージョン](https://github.com/JibbSmart/JoyShockLibrary/releases/latest/)が必要です。
